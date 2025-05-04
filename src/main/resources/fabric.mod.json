@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "reenchant",
+	"version": "${version}",
+	"name": "ReEnchant",
+	"description": "Better Enchanting system inspired by Origin Realms.",
+	"authors": [
+		"Janko"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/reenchant/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.janko.reenchant.ReEnchant"
+		],
+		"fabric-datagen": [
+			"com.janko.reenchant.ReEnchantDataGenerator"
+		]
+	},
+	"mixins": [
+		"reenchant.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
